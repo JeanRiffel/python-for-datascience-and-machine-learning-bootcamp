@@ -10,17 +10,24 @@ Link to Course https://www.udemy.com/course/python-for-data-science-and-machine-
 
 Python 3.0
 
-[Numpy] 
-pip3 install numpy
+## Packages:
 
-[Pandas]
+### Numpy 
+
+This library provide for a developer everthing he needs to manipulate multidimensional arrays, objects.
+
+Command: pip3 install numpy
+
+### Pandas
+
+
 pip3 install pandas
 
-[scikit]
+### scikit
 pip3 install -U scikit-learn
 
-[Matplotlib]
+### Matplotlib
 python3 -m pip install -U matplotlib
 
-[Seaborn]
+### Seaborn
 pip3  install seaborn
