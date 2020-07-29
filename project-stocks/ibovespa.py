@@ -1,14 +1,26 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
-data = pd.read_csv('ibovespa-stocks/b3_stocks_1994_2020.csv')
+def loadData():
+    return  pd.read_csv('ibovespa-stocks/b3_stocks_1994_2020.csv')
 
 
-value_count = data['ticker'].value_counts()
 
-search = data['ticker'] == 'ACE 3'
+def main():
+    data = loadData()
 
-print(search)
+    vvar3 = data.query('ticker=="VVAR3"')
 
-#print(value_count)
+    #print(vvar3)
 
-print(data.head(n=10))
+    columns = pd.DataFrame(vvar3, columns=['high', 'low', 'datetime'])
+
+    columns.plot(x='high', y='low',kind='line' )
+    plt.show()
+
+    print(columns)
+
+
+if __name__ == "__main__":
+    main()
+
